@@ -1,10 +1,11 @@
 {
+  "homepage": "https://zim89.github.io/tattooart",
   "name": "tattooart",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build src/*.html --public-url /tattooart/",
     "start": "next start",
     "lint": "next lint"
   },
