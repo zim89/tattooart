@@ -1,0 +1,15 @@
+.logo {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &Icon {
+    width: 27px;
+    height: 33px;
+
+    @media screen and (min-width: 768px) {
+      width: 36px;
+      height: 44px;
+    }
+  }
+}

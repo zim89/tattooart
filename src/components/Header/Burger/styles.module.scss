@@ -1,0 +1,15 @@
+.burger {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &Icon {
+    width: 26px;
+    height: 26px;
+
+    @media screen and (min-width: 768px) {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
