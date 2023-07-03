@@ -1,5 +1,5 @@
 .hero {
-  height: 616px;
+  // height: 616px;
   padding-top: 78px;
   padding-bottom: 106px;
   background-image: url('/images/hero/hero-mobile.jpg');
@@ -13,7 +13,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    height: 865px;
+    // height: 865px;
     padding-top: 118px;
     background-image: url('/images/hero/hero-tablet.jpg');
     background-position: center;
@@ -26,7 +26,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    height: 833px;
+    // height: 833px;
     padding-top: 205px;
     background-image: url('/images/hero/hero-desktop.jpg');
 
@@ -86,6 +86,7 @@
   }
 
   &Btn {
+    width: 100%;
     @media screen and (min-width: 768px) {
       width: 317px;
     }
