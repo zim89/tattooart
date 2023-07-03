@@ -186,7 +186,7 @@ const Gallery = (props) => {
                   src={path}
                   alt={desc}
                   fill={true}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
                 />
               </li>
             ))}
