@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import { Container, Section } from '../Common';
 import styles from './Styles.module.scss';
+import { lora } from '@/app/layout';
+import clsx from 'clsx';
 
 const Features = (props) => {
   return (
@@ -13,7 +15,7 @@ const Features = (props) => {
           <li className={styles.featuresItem}>Безпека та гігієна</li>
         </ul>
         <Container>
-          <p className={styles.featuresText}>
+          <p className={clsx(lora.className, styles.featuresText)}>
             Завдяки нашому досвіду, таланту та професіоналізму, ми створимо
             татуювання, яке буде відображати вашу особистість, допоможе виразити
             емоції або просто прикрасить ваше тіло.

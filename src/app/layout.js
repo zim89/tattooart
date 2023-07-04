@@ -1,10 +1,17 @@
-import { Raleway } from 'next/font/google';
+import { Raleway, Lora } from 'next/font/google';
 import { Section, Container } from '@/components/Common';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import './global.scss';
 
 const raleway = Raleway({
+  weight: ['400', '500'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+export const lora = Lora({
   weight: ['400', '500'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
