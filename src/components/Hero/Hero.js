@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './Styles.module.scss';
 import { Button, Container } from '../Common';
-import Image from 'next/image';
 
 const Hero = (props) => {
   return (

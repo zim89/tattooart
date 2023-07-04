@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Flaviotte';
+  src: url('/fonts/flaviotte/web-ps/flaviotte.woff2') format('woff2'),
+    url('/fonts/flaviotte/web-ps/flaviotte.otf') format('otf');
+}
+
 .hero {
   // height: 616px;
   padding-top: 78px;
@@ -63,6 +69,7 @@
   }
 
   &Title {
+    font-family: 'Flaviotte';
     color: var(--color-white);
     font-size: 36px;
     font-weight: 400;
