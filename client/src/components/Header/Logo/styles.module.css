@@ -1,0 +1,17 @@
+@media screen and (min-width: 1280px) {
+  .logo {
+    display: none;
+  }
+}
+
+.icon {
+  width: 27px;
+  height: 33px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    width: 36px;
+    height: 44px;
+  }
+}

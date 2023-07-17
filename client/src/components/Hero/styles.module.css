@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Flaviotte';
+  src: url('./fonts/flaviotte/web-ps/flaviotte.woff2') format('woff2'),
+    url('./fonts/flaviotte/web-ps/flaviotte.otf') format('otf');
+}
+
+.hero {
+  background-image: url('./images/hero/hero-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url('./images/hero/hero-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url('./images/hero/hero-tablet.jpg');
+    background-position: center;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+      background-image: url('./images/hero/hero-tablet@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url('./images/hero/hero-desktop.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+      background-image: url('./images/hero/hero-desktop@2x.jpg');
+    }
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 316px;
+  padding-top: 74px;
+  padding-bottom: 106px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap {
+    justify-content: flex-start;
+    gap: 78px;
+    padding-top: 118px;
+    padding-bottom: 501px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrap {
+    gap: 72px;
+    padding-top: 299px;
+    padding-bottom: 388px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.title {
+  font-family: 'Flaviotte';
+  color: var(--color-white);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.21;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 64px;
+    line-height: 1.21;
+  }
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.btn {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 317px;
+  }
+}

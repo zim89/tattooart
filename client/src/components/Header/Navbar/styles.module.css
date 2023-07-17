@@ -1,0 +1,36 @@
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+  }
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.17;
+  color: var(--color-primary);
+  transition: all var(--transition-dur-func);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-blue);
+}
+
+.logo {
+  display: inline-block;
+  width: 39px;
+  height: 47px;
+}
