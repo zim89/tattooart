@@ -51,3 +51,29 @@
     padding: 8px 14px;
   }
 }
+
+.loginBtn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.17;
+  padding: 7px 11px;
+  border-radius: 10px;
+  color: var(--color-success);
+  background-color: transparent;
+  border: 1px solid var(--color-success);
+  transition: all var(--transition-dur-func);
+}
+
+.logoutBtn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.17;
+  padding: 7px 11px;
+  border-radius: 10px;
+  color: var(--color-accent);
+  background-color: transparent;
+  border: 1px solid var(--color-accent);
+  transition: all var(--transition-dur-func);
+}
