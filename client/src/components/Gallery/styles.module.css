@@ -61,7 +61,7 @@
 
 .item {
   width: 161px;
-  height: 178px;
+  /* height: 178px; */
   position: relative;
   background-color: tomato;
 }
@@ -69,13 +69,13 @@
 @media screen and (min-width: 768px) {
   .item {
     width: 219px;
-    height: 222px;
+    /* height: 222px; */
   }
 }
 
 @media screen and (min-width: 1280px) {
   .item {
     width: 270px;
-    height: 270px;
+    /* height: 270px; */
   }
 }

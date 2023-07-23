@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
 import css from './styles.module.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchTattoos } from '../../redux/slices/tattoos';
+import GalleryItem from './GalleryItem/GalleryItem';
 
 const options = [
   { value: 'all', label: 'Усі' },
@@ -16,9 +19,12 @@ const animatedComponents = makeAnimated();
 
 const Gallery = () => {
   const [currentSelect, setCurrentSelect] = useState('all');
-  const [tattoos, setTattoos] = useState([]);
+  const { tattoos } = useSelector(state => state.tattoos);
+  const dispatch = useDispatch();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    dispatch(fetchTattoos());
+  }, [dispatch]);
 
   const getSelectValue = () => {
     return currentSelect
@@ -47,14 +53,9 @@ const Gallery = () => {
             </div>
           </div>
           <ul className={css.list}>
-            <li className={css.item}>Item</li>
-            <li className={css.item}>Item</li>
-            <li className={css.item}>Item</li>
-            <li className={css.item}>Item</li>
-            <li className={css.item}>Item</li>
-            <li className={css.item}>Item</li>
-            <li className={css.item}>Item</li>
-            <li className={css.item}>Item</li>
+            {tattoos.items.map(({ imgUrl, desc, _id }) => (
+              <GalleryItem key={_id} imgUrl={imgUrl} desc={desc} />
+            ))}
           </ul>
         </div>
       </div>

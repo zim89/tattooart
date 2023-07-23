@@ -8,6 +8,7 @@
   --color-white: #ececec; /* white main */
   --color-accent: #bf4d4d;
   --color-black: #0e0e0e;
+  --color-success: #87d6a1;
   --color-grey: #3a3e50;
   --color-grey-light: #5a5e71;
   --color-grey-dark: #2a2d3b;
@@ -15,9 +16,6 @@
   --color-blue-dark: #7181c5;
   --bg-color-dark: #1b1d26;
   --transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-* {
-  box-sizing: border-box;
 }
 
 h1,
@@ -58,13 +56,11 @@ img {
 
 body {
   font-family: var(--font-primary);
-  min-height: 100vh;
-  margin: 0;
   color: var(--color-primary);
   background-color: var(--bg-color-dark);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -75,7 +71,7 @@ body {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 .section {
   padding-top: 42px;
