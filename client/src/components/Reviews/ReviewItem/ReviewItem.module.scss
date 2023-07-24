@@ -1,0 +1,115 @@
+.wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: #3a3e50;
+  border-radius: 18px;
+  padding: 18px 22px;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 154px;
+    padding-right: 28px;
+  }
+}
+
+.head {
+  display: flex;
+  gap: 14px;
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    gap: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+.avatar {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 82px;
+    height: 82px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    width: 102px;
+    height: 102px;
+  }
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  @media screen and (min-width: 768px) {
+    gap: 4px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.date {
+  font-size: 14px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.17;
+  }
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}

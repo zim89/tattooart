@@ -1,0 +1,64 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  margin-bottom: 42px;
+
+  @media screen and (min-width: 768px) {
+    width: 364px;
+    gap: 38px;
+    margin-bottom: 48px;
+  }
+
+  &Fields {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  &Field {
+    position: relative;
+  }
+
+  &Input {
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    border-radius: 12px;
+    width: 100%;
+    padding: 14px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    outline: none;
+    color: var(--color-blue);
+
+    @media screen and (min-width: 768px) {
+      padding: 13px 10px;
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &:focus {
+      border-color: var(--color-blue);
+    }
+
+    &::placeholder {
+      color: #c5c5c5;
+    }
+  }
+
+  &Error {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+
+  &ErrorMsg {
+    position: absolute;
+    top: -18px;
+    left: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--color-accent);
+  }
+}
